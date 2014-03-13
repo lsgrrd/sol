@@ -29,6 +29,34 @@ body {
 }
 
 
+.polaroid {
+	background: white;
+	padding: 10px;
+	padding-bottom: 50px;
+	-webkit-box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.75);
+}
+
+.r1 {
+	transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg); /* IE 9 */
+	-webkit-transform:rotate(-3deg); /* Opera, Chrome, and Safari */
+}
+
+.r2 {
+	transform:rotate(8deg);
+	-ms-transform:rotate(8deg); /* IE 9 */
+	-webkit-transform:rotate(8deg); /* Opera, Chrome, and Safari */
+}
+
+.r3 {
+	transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg); /* IE 9 */
+	-webkit-transform:rotate(-10deg); /* Opera, Chrome, and Safari */
+}
+
+
 // Small screens
 @media only screen { } /* Define mobile styles */
 
@@ -50,7 +78,7 @@ body {
 	} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 
-// Medium screens
+	// Medium screens
 	@media only screen and (min-width: 50em) { 
 
 		#main { 
@@ -72,26 +100,14 @@ body {
 				height: 356px;
 			}
 
-			}
-
-
-
-
-
-	// Medium screens
-	@media only screen and (min-width: 40.063em) { 
-
-		#main { 
-			background: url("../img/waterBG.png") 50% 0  fixed; 
-			background-size: 150% 655px !important;
-			background-repeat: no-repeat;
-			height: 356px;
 		}
 
 
-		} /* min-width 641px, medium screens */
 
-		@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+		// Medium screens
+		@media only screen and (min-width: 40.063em) { 
 
 			#main { 
 				background: url("../img/waterBG.png") 50% 0  fixed; 
@@ -100,17 +116,29 @@ body {
 				height: 356px;
 			}
 
-			} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
-			// Large screens
-			@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+			} /* min-width 641px, medium screens */
 
-			@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+			@media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
-			// XLarge screens
-			@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+				#main { 
+					background: url("../img/waterBG.png") 50% 0  fixed; 
+					background-size: 150% 655px !important;
+					background-repeat: no-repeat;
+					height: 356px;
+				}
 
-			@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+				} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
-			// XXLarge screens
+				// Large screens
+				@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+				@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+				// XLarge screens
+				@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+				@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+				// XXLarge screens
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
